@@ -1,0 +1,29 @@
+<!-- Se genera estructura html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+
+    <!-- se crea el contenedor, donde se imprimira el hola mundo -->
+    <div id="container"></div>
+
+    <!-- Enlaces React CDN -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <!-- script para crear elemento h1 que mostrara el hola mundo -->
+    <script>
+        // crear elemento h1 con react, con sus estilos
+        let h1 = React.createElement("h1",{id:"heading",style:{color:"#66006B",background:"red", textAlign:"center"}},"Hola mundo");
+
+        // Se renderiza el elemento h1 para mostrar en navegador
+        ReactDOM.render(h1,document.getElementById("container"));
+    </script>
+    <script src="set.js"></script>
+</body>
+</html>
